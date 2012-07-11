@@ -1,0 +1,39 @@
+// Create the canvas
+  var canvas = document.createElement("canvas");
+  var ctx = canvas.getContext("2d");
+  canvas.width = 512;
+  canvas.height = 480;
+  document.body.appendChild(canvas);
+
+//Reset game to original state
+  function reset() {
+
+  };
+
+// Update game objects
+  function update( modifier ) {
+
+  };
+
+// Draw everything
+  function render() {
+
+  };
+
+// The main game loop
+  var main = function () {
+    var now = Date.now();
+    var delta = now - then;
+
+    update(delta / 1000);
+    render();
+
+    then = now;
+  };
+
+// Let's play this game!
+  reset();
+  var then = Date.now();
+  // Execute as fast as possible
+  setInterval(main, 1);
+

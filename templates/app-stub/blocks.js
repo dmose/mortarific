@@ -10,5 +10,8 @@ module.exports = {
     },
     js_global: function() {
         return fs.readFileSync(__dirname + '/js_global.html');
+    },
+    js_requires: function() {
+        return fs.readFileSync(__dirname + '/js_requires.html');
     }
 };
